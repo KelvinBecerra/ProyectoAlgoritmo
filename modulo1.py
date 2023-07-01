@@ -69,7 +69,7 @@ def check_db():
         db = convertir_a_json(url_a_objetos())
         with open(filename, 'w') as file:
             file.write(str(db))
-        #print("Primera vez 😉")
+        #print("Primera vez")
         
     return db
     

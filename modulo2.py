@@ -26,6 +26,12 @@ def registrar_clientes():
             productos.append(producto)
     for product in productos:
         compra_producto(product['nombre'], product['cantidad'])
+    metodo_pago = 0
+    while (metodo_pago < 1 or metodo_pago > 4) or (metodo_pago == 3 or metodo_pago == 4 and cedula[0] == "V")):
+        metodo_pago = int(input("Ingrese el metodo de pago:\n1. Bs\n2. Divisas\n3. A Credito 15 dias (solo Juridico)\n4. A Credito 30 dias (solo Juridico)\n"))
+    metodo_envio = int(input("Ingrese el metodo de envio:\n1. Envio delivery (solo Caracas)\n2. Envio MRW\n"))
+    
+    
         
 #Funcion de guardado de base de datos
 def check_clientes():

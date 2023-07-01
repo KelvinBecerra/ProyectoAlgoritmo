@@ -6,10 +6,17 @@ from modulo3 import*
 from modulo4 import* 
 from modulo6 import*
 
-class Pagos():
-    def __init__(self,monto,moneda,tipo_pago,buscar_pagos,fecha,):
-        pass
 
+
+
+
+
+
+
+
+
+def menu_envio():
+    pass
 # Registrar los pagos con la siguiente información:
 # Cliente que realizó el pago
 # Monto del pago

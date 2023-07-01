@@ -31,3 +31,7 @@ def buscar_pagos(cliente=None,fecha=None,tipo_pago=None,moneda=None):
             continue
         resultados.append(pago)
         return resultados
+    
+    
+def menu_pagos():
+    pass

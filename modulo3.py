@@ -1,20 +1,10 @@
 from principal import*
-from menu import*
+from menu import Clientes
 from modulo1 import*
 from modulo2 import*
 from modulo4 import*
 from modulo5 import* 
-class Clientes:
-    def __init__(self,nombre,apellido,razon_social,tipo_cliente,cedula,rif,correo,direccion_envio,telefono):
-       self.nombre=nombre
-       self.apellido=apellido
-       self.razon_social=razon_social
-       self.tipo_cliente=tipo_cliente
-       self.cedula=cedula
-       self.rif=rif
-       self.correo=correo
-       self.direccion_envio=direccion_envio
-       self.telefono=telefono 
+
 clientes={}
 def registrar_clientes():
     nombre=input("Ingrese nombre del cliente: ")
@@ -125,7 +115,7 @@ def buscar_clientes():
         else:
             print("¡CLIENTE NO ENCONTRADO!")
     
-def menu_clientes():
+def menu_clientes():#Menu para escoger que hacer
     print("---BIENVENIDO AL MENU DE LOS CLIENTES----")
     print(f"(1) Registrar cliente\n (2) Modificar informacion de los clientes\n (3) Eliminar clientes \n (4) Buscar clientes ")
     opcion=int(input("--> "))
